@@ -4,7 +4,14 @@
     "outDir": "../out-tsc/app",
     "module": "es2015",
     "baseUrl": "",
-    "types": []
+    "types": [],
+    "paths": {
+      "@angular/*": ["../node_modules/@angular/*"],
+      "@types/d3": ["../node_modules/@types/d3"],
+      "d3": ["../node_modules/d3"],
+      "zone.js": ["../node_modules/zone.js"],
+      "rxjs": ["../node_modules/rxjs"]
+    }
   },
   "exclude": [
     "test.ts",
