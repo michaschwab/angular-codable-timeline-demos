@@ -18,5 +18,5 @@ export class AppComponent {
     this.x = fct;
   }
 
-  events = [{name: 'Something', description: 'March 2001', time: new Date(2001, 3)}, {name: 'Something else', description: 'January 2010', time: new Date(2010, 1)}];
+  events = [{name: 'Something', description: 'March 2001', time: new Date(2001, 2)}, {name: 'Something else', description: 'January 2010', time: new Date(2010, 0)}];
 }

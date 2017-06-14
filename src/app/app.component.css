@@ -1,3 +1,27 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 .events-timeline text {
   text-anchor: middle;
+}
+codable-timeline {
+  cursor: default;
+}
+
+
+codable-timeline text {
+  pointer-events: none;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.code-col pre {
+  width: 500px;
+  overflow: auto;
+  text-align: left;
 }

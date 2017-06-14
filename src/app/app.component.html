@@ -1,11 +1,34 @@
-<div style="text-align:center">
-  Hello!
-  <codable-timeline class="events-timeline" (onScaleUpdate)="onScaleUpdate($event)" [height]="100" [width]="500" [xStart]="start" [xEnd]="end" [margin]="margin">
-    <svg:g *ngFor="let event of events" [attr.transform]="'translate('+x(event.time)+','+(margin.top)+')'">
-      <svg:text>{{event.name}}</svg:text>
-      <svg:text dy="20">{{event.description}}</svg:text>
-      <svg:line y1="22" [attr.y2]="100-margin.top-margin.bottom" stroke="#f00"></svg:line>
-    </svg:g>
-  </codable-timeline>
+<div class="container">
+
+  <table style="width: 100%">
+    <tr>
+      <th width="15%">Name</th>
+      <th width="50%">Visualization</th>
+      <th width="35%">Code</th>
+    </tr>
+    <tr>
+      <td>Labeled Events</td>
+      <td>
+        <codable-timeline class="events-timeline" (onScaleUpdate)="onScaleUpdate($event)" [height]="100" [width]="500" [xStart]="start" [xEnd]="end" [margin]="margin">
+          <svg:g *ngFor="let event of events" [attr.transform]="'translate('+x(event.time)+','+(margin.top)+')'">
+            <svg:text>{{event.name}}</svg:text>
+            <svg:text dy="20">{{event.description}}</svg:text>
+            <svg:line y1="22" [attr.y2]="100-margin.top-margin.bottom" stroke="#f00"></svg:line>
+          </svg:g>
+        </codable-timeline>
+      </td>
+      <td class="code-col">
+        <pre><code ngNonBindable>
+&lt;codable-timeline class=&quot;events-timeline&quot; (onScaleUpdate)=&quot;onScaleUpdate($event)&quot; [height]=&quot;100&quot; [width]=&quot;500&quot; [xStart]=&quot;start&quot; [xEnd]=&quot;end&quot; [margin]=&quot;margin&quot;&gt;
+  &lt;svg:g *ngFor=&quot;let event of events&quot; [attr.transform]=&quot;'translate('+x(event.time)+','+(margin.top)+')'&quot;&gt;
+    &lt;svg:text&gt;{{event.name}}&lt;/svg:text&gt;
+    &lt;svg:text dy=&quot;20&quot;&gt;{{event.description}}&lt;/svg:text&gt;
+    &lt;svg:line y1=&quot;22&quot; [attr.y2]=&quot;100-margin.top-margin.bottom&quot; stroke=&quot;#f00&quot;&gt;&lt;/svg:line&gt;
+  &lt;/svg:g&gt;
+&lt;/codable-timeline&gt;</code></pre>
+      </td>
+    </tr>
+  </table>
+
 </div>
 
