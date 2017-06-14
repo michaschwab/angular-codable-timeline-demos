@@ -11,7 +11,7 @@ codable-timeline {
 }
 
 
-codable-timeline text {
+codable-timeline text, codable-timeline polyline {
   pointer-events: none;
   cursor: default;
   -webkit-user-select: none;

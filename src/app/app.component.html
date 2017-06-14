@@ -28,6 +28,19 @@
 &lt;/codable-timeline&gt;</code></pre>
       </td>
     </tr>
+    <tr>
+      <td>Some Line</td>
+      <td>
+        <codable-timeline class="line-timeline" (onScaleUpdate)="onScaleUpdate2($event)" [height]="100" [width]="500" [xStart]="start2" [xEnd]="end2" [margin]="margin">
+          <svg:polyline stroke="#f00" [attr.points]="timelinePoints" fill="none"></svg:polyline>
+        </codable-timeline>
+      </td>
+      <td class="code-col">
+        <pre><code ngNonBindable>&lt;codable-timeline class=&quot;line-timeline&quot; (onScaleUpdate)=&quot;onScaleUpdate2($event)&quot; [height]=&quot;100&quot; [width]=&quot;500&quot; [xStart]=&quot;start2&quot; [xEnd]=&quot;end2&quot; [margin]=&quot;margin&quot;&gt;
+  &lt;svg:polyline stroke=&quot;#f00&quot; [attr.points]=&quot;timelinePoints&quot; fill=&quot;none&quot;&gt;&lt;/svg:polyline&gt;
+&lt;/codable-timeline&gt;</code></pre>
+      </td>
+    </tr>
   </table>
 
 </div>
